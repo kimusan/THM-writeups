@@ -101,7 +101,7 @@ To me this makes it likely that we need to find some number to input into the "s
 
 A quick way to generate a list of numbers is with the `seq`  command
 ```
-$sec 10000 99999 > numbers.txt
+$seq 10000 99999 > numbers.txt
 ```
 
 Next we need to bruteforce this number. Normally this could be done with Burp Suite but when I tested this, it was mindblowing slow. It also showed that for every 10 or so numbers it told me to back off as I was sending too many requests. 
@@ -145,7 +145,7 @@ Upload my usual php reverse shell script, fire up `nc -lvnp 1234` on my local bo
 
 going to http://sustah.thm/img/shell.php and the shell is ready for action in your local nc listener. 
 
-### enumeration an getting user
+### Enumeration and getting user
 At this point  we have the www-data user, which is only god for enumerating the machine. I fired up a local webserver on my machine with `python3 -m http.server` and then used wget to get linpeas.sh 
 
 The script did not  reveal much so I went back to the THM room page and noticed a Hint. It told me that there might be some useful backup files. 
@@ -164,7 +164,7 @@ Checking the folder I see that only one file is readable (a hidden file) and did
 
 Using `su user` and the password I found and I got escalated to the real user account and the user.txt flag.
 
-### Escalating privilegdes
+### Escalating priviledges
 
 This time I did read the hint to beging with. It told me to look for an alternative to sudo. Being a long-time user of Linux and BSD made me thing of the `doas` command right away. 
 
@@ -174,7 +174,7 @@ The config file told me that I could run rsync command as root without a passwor
 
 From here it is the usual `cat /root/root.txt` and the root flag and final answer needed for the room was found. 
 
-### after thoughts
+### After thoughts
 
 The Room was interesting as not many touch on the use of http headers during attack phase. This made this room a good room to learn from. After the actual foothold was in place, the rest was pretty simple. 
 
@@ -182,7 +182,7 @@ The thing delaying me the most was the fact that I did not read the hint for the
 
 The priviledges escalation to root was, in my opinion too easy. 
 
-Bood room overall. 
+Good room overall. 
 
 
 
