@@ -89,7 +89,9 @@ by OJ Reeves (@TheColonial) & Christian Mehlmauer (@_FireFart_)
 
 ```
 
-Now this looks more interesting. Visiting the `/home/` folder shows some sort of "spin the wheel" game. Testing it shows that it if you input a number and pres the "click" button it seems like a form is posted with the number and it returns with a message that you weren't lucky, 
+Now this looks more interesting. Visiting the `/home/` folder shows some sort of "spin the wheel" game. Testing it shows that it if you input a number and pres the "click" button it seems like a form is posted with the number and it returns with a message that you weren't lucky.
+![screenshot](https://github.com/kimusan/THM-writeups/raw/master/sustah/sustah-spin-wheel-ss.png "Screenshot of the spin the wheel game")
+ 
 
 Pressing the "spin" button triggers some javascript function that spins the graphical wheel and starts a 10second countdown. Nothing seems to actualy happen towards the server. 
 
