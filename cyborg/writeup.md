@@ -115,7 +115,7 @@ This hints that the Squid proxy installation is using the specific passwd file a
 
 Let's move on to the `/admin` directory - the actual website
 
-![alt text](https://github.com/kimusan/THM-writeups/cyborg/raw/main/cyborg-admin-web-ss.png "admin website")
+![alt text](https://github.com/kimusan/THM-writeups/raw/main/cyborg/cyborg-admin-web-ss.png "admin website")
 
 The menu in the top reveals a few things. There is an option to download the archive which gives us a file archive.tar. 
 unpacking this reveals a bunch of folders with a structure like `home/field/dev/final_archive`. Could this hit a user name "field"? 
