@@ -10,7 +10,7 @@ The room is describes with: *The developers have added anti-cheat measures to th
 
 First of all I always add the IP to my hosts file so I do not have to remember it. 
 ```
-sudo echo "10.10.59.244  sustah.thm" >> /etc/hosts
+echo "10.10.59.244  sustah.thm"|sudo tee -a /etc/hosts
 ```
 As with most boxes we start with nmapping the hell ouf of it:
 
