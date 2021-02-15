@@ -47,7 +47,7 @@ In total 90 ports identifies as open - an inferno of ports. Going through the mo
 
 Let't take a look at the webservice as we have no user names yet for ssh.
 
-![alt text](https://github.com/kimusan/THM-writeups/raw/main/inferno/inferno-ss.png "website")
+![alt text](https://github.com/kimusan/THM-writeups/raw/main/inferno/inferno_ss.png "website")
 
 The webserver shows an picture of Dantes 9 circles of hell and another part of Dantes Inforno, Canto 34 (this time in original language). Just for the sake of it I checked the page code to look for hidden info - nothing.
 
@@ -111,7 +111,7 @@ Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2021-02-15 03:56:
 
 It turned out that my username guesses and their ordering was fantastic (again this info comes from playing a bunch of THM rooms). If I had to run throug heven this short list of users and all passwords it would likely take 350hours.
 With the password and username I could now login via the basic auth popup....just to find a webpage with a login prompt. 
-![alt text](https://github.com/kimusan/THM-writeups/raw/main/inferno/inferno-ss2.png "website login")
+![alt text](https://github.com/kimusan/THM-writeups/raw/main/inferno/inferno_ss2.png "website login")
 
 
 I tried the username/password combo again and it luckily worked.
@@ -203,7 +203,7 @@ $ diff exploit.py exploit-fixed.py
 
 running again and I now get this:
 
-![alt text](https://github.com/kimusan/THM-writeups/raw/main/inferno/inferno-ss3.png "exploiting")
+![alt text](https://github.com/kimusan/THM-writeups/raw/main/inferno/inferno_ss3.png "exploiting")
 
 It worked....but after just a few seconds it looks like something sends an "exit" command to our shell and we gets kicked out. Another ring of the inferno? 
 
